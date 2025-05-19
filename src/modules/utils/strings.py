@@ -6,22 +6,26 @@
 PmStartText = """
 Hey {0}, 🥀
 
-Welcome to <b>{1}</b>!
-Version: <b>v{2}</b>
+Wᴇʟᴄᴏᴍᴇ ᴛᴏ <b>{1}</b>!
 
-A fast, reliable and powerful Telegram music bot built with amazing features.
+Vᴇʀsɪᴏɴ <b>v{2}</b>
 
-<b>Supported Platforms:</b> YouTube, Spotify, Apple Music and SoundCloud.
+ᴀ ғᴀsᴛ ᴀɴᴅ ᴘᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ʙᴏᴛ ʙᴜɪʟᴅ ᴡɪᴛʜ ᴀᴍᴀᴢɪɴɢ ғᴇᴀᴛᴜʀᴇs
+
+<b>Sᴜᴘᴘᴏʀᴛᴇᴅ Pʟᴀᴛғᴏʀɴ</b> 
+
+YouTube, Spotify, Apple Music and SoundCloud
 """
 
 StartText = """
-<b>Hello {0}, 🥀</b>
+<b>нєу {0}, 🥀</b>
 
-<b>{1}</b> is now active and ready to play music! 🔊
+<b>{1}</b> Is Aᴄᴛɪᴠᴇ Nᴏᴡ Aɴᴅ Rᴇᴀᴅʏ Tᴏ Pʟᴀʏ Mᴜsɪᴄ ❀
 
 ───────────────
-Need help or got questions?  
-Join our <a href='{2}'>Support Chat</a> — we're here for you! 💬
+Nᴇᴇᴅ Hᴇʟᴘ Oʀ Gᴏᴛ A Qᴜᴇsᴛɪᴏɴ
+
+Join our <a href='{2}'>Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ</a> — ᴡᴇ ᴀʀᴇ ғᴏʀ ʏᴏᴜ 💬
 """
 
 UserCommands = """

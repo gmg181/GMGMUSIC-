@@ -120,7 +120,7 @@ async def reload_cmd(c: Client, message: types.Message) -> None:
     chat_id = message.chat_id
     if chat_id > 0:
         reply = await message.reply_text(
-            "🚫 This command can only be used in SuperGroups only."
+            "🚫 Tʜɪs Cᴏᴍᴍɴᴀᴅ Cᴀɴ Bᴇ Usᴇᴅ Iɴ Gʀᴏᴜᴘs Oɴʟʏ."
         )
         if isinstance(reply, types.Error):
             c.logger.warning(f"Error sending message: {reply} for chat {chat_id}")
@@ -130,14 +130,14 @@ async def reload_cmd(c: Client, message: types.Message) -> None:
         last_used_time = rate_limit_cache[user_id]
         time_remaining = 180 - (datetime.now() - last_used_time).total_seconds()
         reply = await message.reply_text(
-            f"🚫 You can use this command again in ({sec_to_min(time_remaining)} Min)"
+            f"🚫 Yᴏᴜ Cᴀɴ Usᴇ Tʜɪs Cᴏᴍᴀɴɴᴅ Iɴ ({sec_to_min(time_remaining)} Min)"
         )
         if isinstance(reply, types.Error):
             c.logger.warning(f"Error sending message: {reply} for chat {chat_id}")
         return None
 
     rate_limit_cache[user_id] = datetime.now()
-    reply = await message.reply_text("🔄 Reloading...")
+    reply = await message.reply_text("🔄 Rᴇʟᴏᴀᴅɪɴɢ...")
     if isinstance(reply, types.Error):
         c.logger.warning(f"Error sending message: {reply} for chat {chat_id}")
         return None
@@ -162,9 +162,9 @@ async def reload_cmd(c: Client, message: types.Message) -> None:
 
     loaded = "✅" if load_admins else "❌"
     text = (
-        f"<b>Assistant Status:</b> {ub_stats.getType()}\n"
-        f"<b>Admins Loaded:</b> {loaded}\n"
-        f"<b>» Reloaded by:</b> {await message.mention()}"
+        f"<b>Assɪsᴛᴀɴᴛ Sᴛᴀᴛᴜsᴇ</b> {ub_stats.getType()}\n\ɴ"
+        f"<b>Aᴅᴍɪɴ Lᴏᴅᴇᴅ</b> {loaded}\n"
+        f"<b>» Rᴇʟᴏᴅᴇᴅ Bʏ</b> {await message.mention()}"
     )
 
     reply = await reply.edit_text(text)
@@ -179,7 +179,7 @@ async def ping_cmd(client: Client, message: types.Message) -> None:
     Handle the /ping command to check bot performance metrics.
     """
     start_time = time.monotonic()
-    reply_msg = await message.reply_text("🏓 Pinging...")
+    reply_msg = await message.reply_text("🏓 Pɪɴɪɴɢ...")
     latency = (time.monotonic() - start_time) * 1000  # ms
 
     response = await call.stats_call(message.chat_id if message.chat_id < 0 else 1)
@@ -211,7 +211,7 @@ async def song_cmd(c: Client, message: types.Message):
     """Handle the /song command."""
     args = extract_argument(message.text)
     reply = await message.reply_text(
-        f"🎶 USE: <code>@SpTubeBot {args or 'song name'}</code>"
+        f"🎶 ᑌՏᗴ <code>{args or 'song name'}</code>"
     )
     if isinstance(reply, types.Error):
         c.logger.warning(f"Error sending message: {reply}")

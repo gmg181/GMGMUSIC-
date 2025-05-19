@@ -161,10 +161,12 @@ async def reload_cmd(c: Client, message: types.Message) -> None:
         ub_stats = ub_stats.message
 
     loaded = "✅" if load_admins else "❌"
+    
     text = (
-        f"<b>Assɪsᴛᴀɴᴛ Sᴛᴀᴛᴜsᴇ</b> {ub_stats.getType()}\n\ɴ"
-        f"<b>Aᴅᴍɪɴ Lᴏᴅᴇᴅ</b> {loaded}\n"
-        f"<b>» Rᴇʟᴏᴅᴇᴅ Bʏ</b> {await message.mention()}"
+    f"<b>Assɪsᴛᴀɴᴛ Sᴛᴀᴛᴜsᴇ</b> {ub_stats.getType()}\n"
+    f"<b>Aᴅᴍɪɴ Lᴏᴅᴇᴅ</b> {loaded}\n"
+    f"<b>» Rᴇʟᴏᴅᴇᴅ Bʏ</b> {await message.mention()}"
+)
     )
 
     reply = await reply.edit_text(text)

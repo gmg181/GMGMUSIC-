@@ -36,31 +36,31 @@ CLOSE_BTN = types.InlineKeyboardButton(
 )
 
 CHANNEL_BTN = types.InlineKeyboardButton(
-    text="Channel 📢 ", type=types.InlineKeyboardButtonTypeUrl(config.SUPPORT_CHANNEL)
+    text="Cʜᴀɴɴᴇʟ ", type=types.InlineKeyboardButtonTypeUrl(config.SUPPORT_CHANNEL)
 )
 
 GROUP_BTN = types.InlineKeyboardButton(
-    text="Group 💬", type=types.InlineKeyboardButtonTypeUrl(config.SUPPORT_GROUP)
+    text="Gʀᴏᴜᴘ", type=types.InlineKeyboardButtonTypeUrl(config.SUPPORT_GROUP)
 )
 
 HELP_BTN = types.InlineKeyboardButton(
-    text="📖 Help", type=types.InlineKeyboardButtonTypeCallback(b"help_all")
+    text="⌤ Hᴇʟᴘ & Cɪᴍɴᴀɴᴅs", type=types.InlineKeyboardButtonTypeCallback(b"help_all")
 )
 
 USER_BTN = types.InlineKeyboardButton(
-    text="User Commands", type=types.InlineKeyboardButtonTypeCallback(b"help_user")
+    text="Usᴇʀ Cᴏᴍᴍɴᴀᴅs", type=types.InlineKeyboardButtonTypeCallback(b"help_user")
 )
 
 ADMIN_BTN = types.InlineKeyboardButton(
-    text="Admin Commands", type=types.InlineKeyboardButtonTypeCallback(b"help_admin")
+    text="Aᴅᴍɪɴ Cᴏᴍᴍɴᴀᴅs", type=types.InlineKeyboardButtonTypeCallback(b"help_admin")
 )
 
 OWNER_BTN = types.InlineKeyboardButton(
-    text="Owner Commands", type=types.InlineKeyboardButtonTypeCallback(b"help_owner")
+    text="Oᴡɴᴇʀ Cᴏᴍᴍɴᴀɴᴅs", type=types.InlineKeyboardButtonTypeCallback(b"help_owner")
 )
 
 DEVS_BTN = types.InlineKeyboardButton(
-    text="Devs Commands", type=types.InlineKeyboardButtonTypeCallback(b"help_devs")
+    text="Dᴇᴠ Cᴏᴍᴍɴᴀɴᴅs", type=types.InlineKeyboardButtonTypeCallback(b"help_devs")
 )
 
 SupportButton = types.ReplyMarkupInlineKeyboard([[CHANNEL_BTN, GROUP_BTN], [CLOSE_BTN]])
@@ -86,7 +86,7 @@ def add_me_markup(username: str) -> types.ReplyMarkupInlineKeyboard:
         [
             [
                 types.InlineKeyboardButton(
-                    text="➕ Add me to your group",
+                    text="➕ 𝐊 𝐈 𝐃 𝐍 𝐀 𝐏   𝐌 𝐄",
                     type=types.InlineKeyboardButtonTypeUrl(
                         f"https://t.me/{username}?startgroup=true"
                     ),

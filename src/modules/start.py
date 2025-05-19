@@ -166,7 +166,6 @@ async def reload_cmd(c: Client, message: types.Message) -> None:
     f"<b>Assɪsᴛᴀɴᴛ Sᴛᴀᴛᴜsᴇ</b> {ub_stats.getType()}\n"
     f"<b>Aᴅᴍɪɴ Lᴏᴅᴇᴅ</b> {loaded}\n"
     f"<b>» Rᴇʟᴏᴅᴇᴅ Bʏ</b> {await message.mention()}"
-)
     )
 
     reply = await reply.edit_text(text)

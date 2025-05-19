@@ -44,7 +44,7 @@ GROUP_BTN = types.InlineKeyboardButton(
 )
 
 HELP_BTN = types.InlineKeyboardButton(
-    text="˹Hᴇʟᴘ & Cɪᴍɴᴀɴᴅs˼", type=types.InlineKeyboardButtonTypeCallback(b"help_all")
+    text="˹ Hᴇʟᴘ & Cᴏᴍ.ɴᴀɴᴅs ˼", type=types.InlineKeyboardButtonTypeCallback(b"help_all")
 )
 
 USER_BTN = types.InlineKeyboardButton(
@@ -86,7 +86,7 @@ def add_me_markup(username: str) -> types.ReplyMarkupInlineKeyboard:
         [
             [
                 types.InlineKeyboardButton(
-                    text="➕ 𝐊 𝐈 𝐃 𝐍 𝐀 𝐏   𝐌 𝐄",
+                    text="❍ Kɪᴅɴᴀᴘ Mᴇ ❍",
                     type=types.InlineKeyboardButtonTypeUrl(
                         f"https://t.me/{username}?startgroup=true"
                     ),

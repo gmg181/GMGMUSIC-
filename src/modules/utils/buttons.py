@@ -44,7 +44,7 @@ GROUP_BTN = types.InlineKeyboardButton(
 )
 
 HELP_BTN = types.InlineKeyboardButton(
-    text="⌤ Hᴇʟᴘ & Cɪᴍɴᴀɴᴅs", type=types.InlineKeyboardButtonTypeCallback(b"help_all")
+    text="˹Hᴇʟᴘ & Cɪᴍɴᴀɴᴅs˼", type=types.InlineKeyboardButtonTypeCallback(b"help_all")
 )
 
 USER_BTN = types.InlineKeyboardButton(

@@ -87,7 +87,7 @@ BotDevsCommands = """
 /clearallassistants - clear ALL assistant associations.
 """
 
-START_IMAGE_URL = "https://telegra.ph/file/fa5c0b2ddfe395a7eb599-ffb1e16c713feebbcf.jpg"
+START_IMAGE_URL = "https://iili.io/3ielduV.jpg"
 
 # Example usage with Pyrogram
 async def send_start_message(client, message):

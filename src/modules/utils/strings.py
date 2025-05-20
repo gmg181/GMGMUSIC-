@@ -5,20 +5,17 @@
 PmStartText = """
 Hey {0}, 🥀
 
-Tʜɪs ɪs </b>{1}<b>!
+<b>Tʜɪs ɪs {1}!</b>
 
-Vᴇʀsɪᴏɴ </b>v{2}<b>
+<b>Vᴇʀsɪᴏɴ v{2}</b>
 
 ➻ ᴀ ғᴀsᴛ & ᴘᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ғᴇᴀᴛᴜʀᴇs.
 
-◈ </b>Sᴜᴘᴘᴏʀᴛᴇᴅ Pʟᴀᴛғᴏʀᴍ<b>
+<b>◈ Sᴜᴘᴘᴏʀᴛᴇᴅ Pʟᴀᴛғᴏʀᴍ</b>
 
 ☘ Y͛O͛U͛T͛U͛B͛E͛ 
-
 ☘ S͛O͛O͛T͛I͛F͛Y͛
-
 ☘ J͛I͛O͛ S͛A͛V͛V͛A͛N͛
-
 ☘ T͛E͛L͛E͛G͛R͛A͛M͛
 
 ──────────────────
@@ -26,9 +23,9 @@ Vᴇʀsɪᴏɴ </b>v{2}<b>
 """
 
 StartText = """
-</b>нєу {0}, 🥀<b>
+<b>нєу {0}, 🥀</b>
 
-</b>{1}</b> Is Aᴄᴛɪᴠᴇ Nᴏᴡ Aɴᴅ Rᴇᴀᴅʏ Tᴏ Pʟᴀʏ Mᴜsɪᴄ ❀<b>
+<b>{1} Is Aᴄᴛɪᴠᴇ Nᴏᴡ Aɴᴅ Rᴇᴀᴅʏ Tᴏ Pʟᴀʏ Mᴜsɪᴄ ❀</b>
 
 ───────────────
 Nᴇᴇᴅ Hᴇʟᴘ Oʀ Gᴏᴛ A Qᴜᴇsᴛɪᴏɴ
@@ -36,6 +33,7 @@ Nᴇᴇᴅ Hᴇʟᴘ Oʀ Gᴏᴛ A Qᴜᴇsᴛɪᴏɴ
 Join our <a href='{2}'>Support Chat</a> — ᴡᴇ ᴀʀᴇ ғᴏʀ ʏᴏᴜ 💬
 """
 
+# Command texts remain the same as they don't contain HTML tags
 UserCommands = """
 <b>Available Commands for Users:</b>
 
@@ -89,25 +87,30 @@ BotDevsCommands = """
 /clearallassistants - clear ALL assistant associations.
 """
 
-# Start image URL (replace with your actual image URL)
 START_IMAGE_URL = "https://telegra.ph/file/fa5c0b2ddfe395a7eb599-ffb1e16c713feebbcf.jpg"
 
-# Example usage in a Telegram bot handler:
-"""
-from pyrogram import Client, filters
-from pyrogram.types import InputMediaPhoto
-
-@Client.on_message(filters.command("start"))
-async def start_command(client, message):
-    # Send start message with image
-    await client.send_photo(
-        chat_id=message.chat.id,
-        photo=START_IMAGE_URL,
-        caption=PmStartText.format(
-            message.from_user.mention,
-            "TgMusicBot",
-            "1.0"
-        ),
-        parse_mode="html"
-    )
-"""
+# Example usage with Pyrogram
+async def send_start_message(client, message):
+    try:
+        await client.send_photo(
+            chat_id=message.chat.id,
+            photo=START_IMAGE_URL,
+            caption=PmStartText.format(
+                message.from_user.mention,
+                "TgMusicBot",
+                "1.0"
+            ),
+            parse_mode="HTML"
+        )
+    except Exception as e:
+        print(f"Error sending start message: {e}")
+        # Fallback to text message if image fails
+        await message.reply_text(
+            text=PmStartText.format(
+                message.from_user.mention,
+                "TgMusicBot",
+                "1.0"
+            ),
+            parse_mode="HTML",
+            disable_web_page_preview=True
+        )

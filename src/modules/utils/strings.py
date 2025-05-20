@@ -2,7 +2,6 @@
 #  Licensed under the GNU AGPL v3.0: https://www.gnu.org/licenses/agpl-3.0.html
 #  Part of the TgMusicBot project. All rights reserved where applicable.
 
-
 PmStartText = """
 Hey {0}, 🥀
 
@@ -45,7 +44,6 @@ UserCommands = """
 /vplay [song name or reply to video] – Play video in voice chat.
 /privacy – View privacy policy.
 /lang – Change the bot's language.
-
 """
 
 AdminCommands = """
@@ -89,4 +87,27 @@ BotDevsCommands = """
 /broadcast [reply] – Broadcast a message to all users and chats.
 /activevc – Show currently active voice chats.
 /clearallassistants - clear ALL assistant associations.
+"""
+
+# Start image URL (replace with your actual image URL)
+START_IMAGE_URL = "https://telegra.ph/file/fa5c0b2ddfe395a7eb599-ffb1e16c713feebbcf.jpg"
+
+# Example usage in a Telegram bot handler:
+"""
+from pyrogram import Client, filters
+from pyrogram.types import InputMediaPhoto
+
+@Client.on_message(filters.command("start"))
+async def start_command(client, message):
+    # Send start message with image
+    await client.send_photo(
+        chat_id=message.chat.id,
+        photo=START_IMAGE_URL,
+        caption=PmStartText.format(
+            message.from_user.mention,
+            "TgMusicBot",
+            "1.0"
+        ),
+        parse_mode="html"
+    )
 """

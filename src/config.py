@@ -1,3 +1,4 @@
+cookie_data = """
 # Netscape HTTP Cookie File
 # https://curl.haxx.se/rfc/cookie_spec.html
 # This is a generated file! Do not edit.
@@ -23,3 +24,4 @@
 .youtube.com	TRUE	/	TRUE	1779214106	__Secure-3PSIDCC	AKEyXzVT05Pyhnc4aPlj9WoDCdrVEZFkZsilCFNa51gxJJ-uXrZGKI6w_ABwVSYxcPzp1aWGjA
 .youtube.com	TRUE	/	TRUE	1782238099	LOGIN_INFO	AFmmF2swRQIgKfQCwfB_jKvmpbkehNGpcGXrKCb6CgbXTmOWPDfuB_ICIQC4_cYshmaHgXZVpOX-MRgp4xsPnOUZ_ef19RAs5fGK7g:QUQ3MjNmem5hTWdhSXFCQkNnM1Bnd3B4V1dEWWM2bnBJOGwycEgtcUpRaEh3Vkwzc0Jabks2dW1EQ2JYTmZaU2IySFpPZ2t2ZDh5T041b256aXJtSFVYelJGc3E3Rl90ZGhFNGpITFp2WlJoUGFNblRfSHd5eTFQU003OXNrLXZWT0o2RUJwWkFzdjBvaXFhMHhqME9heWNBRUhFRzBRb0NR
 .youtube.com	TRUE	/	TRUE	1747678219	YTSESSION-jnufdw	ANPz9KhvuETxynR0opNtTcTScWVYs2vNgjf/PISe/UQCDGcmNEOPv2BjO6E0rDA5s3VwaBlMVV1JrNIcB6kUYQ+e6M0O8vW2m9ZBGrA=
+"""

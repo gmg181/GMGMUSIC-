@@ -22,7 +22,7 @@ class Telegram(Client):
         self._check_config()
         super().__init__(
             token=config.TOKEN,
-            api_id=config.API_ID,
+            API_KEY = os.getenv("25168742"),
             api_hash=config.API_HASH,
             default_parse_mode="html",
             td_verbosity=2,

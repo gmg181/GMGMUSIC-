@@ -10,8 +10,8 @@
 .youtube.com	TRUE	/	TRUE	1782238101	PREF	tz=Asia.Kolkata
 .youtube.com	TRUE	/	TRUE	1779214094	__Secure-1PSIDTS	sidts-CjIBjplskGNMOTtUC9-gCtVcZhparRXvAEHBQ_rYik_JwvV-t7f5h3k2hdHwn2yjNNe1dhAA
 .youtube.com	TRUE	/	TRUE	1779214094	__Secure-3PSIDTS	sidts-CjIBjplskGNMOTtUC9-gCtVcZhparRXvAEHBQ_rYik_JwvV-t7f5h3k2hdHwn2yjNNe1dhAA
-.youtube.com	TRUE	/	FALSE	1782238099	HSID	AqBw6h9gLlpiocuIT
-.youtube.com	TRUE	/	TRUE	1782238099	SSID	Au8cL0hZtU175jhdm
+#.youtube.com	TRUE	/	FALSE	1782238099	HSID	AqBw6h9gLlpiocuIT
+#.youtube.com	TRUE	/	TRUE	1782238099	SSID	Au8cL0hZtU175jhdm
 .youtube.com	TRUE	/	FALSE	1782238099	APISID	0rB5t9SyyBUqo72J/AF2y0-h1eiW2X8vpX
 .youtube.com	TRUE	/	TRUE	1782238099	SAPISID	NglKaJzEFAEge9om/AOwJ0NQ3zx886q56I
 .youtube.com	TRUE	/	TRUE	1782238099	__Secure-1PAPISID	NglKaJzEFAEge9om/AOwJ0NQ3zx886q56I
